@@ -60,4 +60,3 @@ async def D(ctx):
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
-
