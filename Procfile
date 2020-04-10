@@ -1,1 +1,1 @@
-worker: python injex.py
+worker: python injex.py.py
