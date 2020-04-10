@@ -1,1 +1,1 @@
-worker: python Potsu.py
+worker: python injex.py
