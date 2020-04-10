@@ -57,6 +57,7 @@ async def D(ctx):
     await ctx.send('@everyone')
     await asyncio.sleep(0.3)
 
+
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
 
