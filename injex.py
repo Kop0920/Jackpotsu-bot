@@ -57,6 +57,15 @@ async def D(ctx):
     await ctx.send('@everyone')
     await asyncio.sleep(0.3)
 
+@bot.command()
+async def R(ctx):
+    await ctx.send('@everyone 레이드 갈 준비해주세요')
+    await asyncio.sleep(0.3)
+    await ctx.send('@everyone 레이드 갈 준비해주세요')
+    await asyncio.sleep(0.3)
+    await ctx.send('@everyone 레이드 갈 준비해주세요')
+    await asyncio.sleep(0.3)
+
 
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
