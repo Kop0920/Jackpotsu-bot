@@ -112,7 +112,26 @@ async def 투표(ctx):
         await choose.add_reaction("👍")
     
   
-        
+@bot.command()
+async def Gctx):
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)
+    await ctx.send('@GROOT')
+    await asyncio.sleep(0.3)        
 
 
 
