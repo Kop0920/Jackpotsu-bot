@@ -103,14 +103,15 @@ async def R(ctx):
     await ctx.send('@everyone 레이드 갈 준비해주세요')
     await asyncio.sleep(0.3)
     
-@client.event
-async def on_message(message):
-    if message.content.startswith("!투표"):
-        vote = message.content[4:].split("/")
-        await client.send_message(message.channel, "📢서버투표 - " + vote[0])
-        for i in range(1, len(vote)):
-           choose = await client.send_message(message.channel, "```" + vote[i] + "```")
-           await client.add_reaction(choose, 👍)
+@bot.command()
+async def 투표(ctx):
+    vote = ctx.message.content[3:].split("/")
+    await ctx.end("투표 - " + vote[0])
+    for i in range(1, len(vote)):
+        choose = await ctx.send("```" + vote[i] + "```")
+        await choose.add_reaction("👍")
+    
+  
         
 
 
