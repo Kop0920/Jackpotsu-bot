@@ -105,12 +105,12 @@ async def R(ctx):
     
 @client.event
 async def on_message(message):
-    if message.content.startswith("#투표"):
+    if message.content.startswith("!투표"):
         vote = message.content[4:].split("/")
-        await client.send_message(message.channel, ":loudspeaker:서버투표 - " + vote[0])
+        await client.send_message(message.channel, "📢서버투표 - " + vote[0])
         for i in range(1, len(vote)):
            choose = await client.send_message(message.channel, "```" + vote[i] + "```")
-           await client.add_reaction(choose, :thumbsup:)
+           await client.add_reaction(choose, 👍)
         
 
 
