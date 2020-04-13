@@ -113,7 +113,7 @@ async def 투표(ctx):
     
   
 @bot.command()
-async def Gctx):
+async def G(ctx):
     await ctx.send('@GROOT')
     await asyncio.sleep(0.3)
     await ctx.send('@GROOT')
