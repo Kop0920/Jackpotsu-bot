@@ -106,7 +106,7 @@ async def R(ctx):
 @bot.command()
 async def 투표(ctx):
     vote = ctx.message.content[3:].split("/")
-    await ctx.end("투표 - " + vote[0])
+    await ctx.send("투표 - " + vote[0])
     for i in range(1, len(vote)):
         choose = await ctx.send("```" + vote[i] + "```")
         await choose.add_reaction("👍")
