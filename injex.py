@@ -38,14 +38,6 @@ async def A(ctx):
     await ctx.send('레이드 왔음 @everyone')
     await asyncio.sleep(0.2)
     await ctx.send('레이드 왔음 @everyone')
-    await asyncio.sleep(0.2)
-    await ctx.send('레이드 왔음 @everyone')
-    await asyncio.sleep(0.2)
-    await ctx.send('레이드 왔음 @everyone')
-    await asyncio.sleep(0.2)
-    await ctx.send('레이드 왔음 @everyone')
-    await asyncio.sleep(0.2)
-    await ctx.send('레이드 왔음 @everyone')
 
 @bot.command()
 async def B(ctx):
@@ -72,13 +64,8 @@ async def D(ctx):
     await ctx.send('@everyone')
     await asyncio.sleep(0.3)
     await ctx.send('@everyone')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone')
-    await asyncio.sleep(0.3)
+   
+
 
 
 
@@ -93,16 +80,8 @@ async def R(ctx):
     await ctx.send('@everyone 레이드 갈 준비해주세요')
     await asyncio.sleep(0.3)
     await ctx.send('@everyone 레이드 갈 준비해주세요')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone 레이드 갈 준비해주세요')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone 레이드 갈 준비해주세요')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone 레이드 갈 준비해주세요')
-    await asyncio.sleep(0.3)
-    await ctx.send('@everyone 레이드 갈 준비해주세요')
-    await asyncio.sleep(0.3)
     
+
 @bot.command()
 async def 투표(ctx):
     vote = ctx.message.content[3:].split("/")
@@ -111,27 +90,7 @@ async def 투표(ctx):
         choose = await ctx.send("```" + vote[i] + "```")
         await choose.add_reaction("👍")
     
-  
-@bot.command()
-async def G(ctx):
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)
-    await ctx.send('@GROOT')
-    await asyncio.sleep(0.3)        
+    
 
 
 
