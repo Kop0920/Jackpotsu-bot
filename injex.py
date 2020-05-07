@@ -92,7 +92,7 @@ async def 투표(ctx):
     
  
 
-if message.content.startswith("역할부여김유섭"):
+if message.content.startswith("역할부여김유섭):
     role = ""
     rolename = discord.utils.get(client.get_all_members(), id=rolename[1])
     for i in message.server.roles:
