@@ -90,17 +90,9 @@ async def 투표(ctx):
         choose = await ctx.send("```" + vote[i] + "```")
         await choose.add_reaction("👍")
     
- 
 
-if message.content.startswith("역할부여김유섭"):
-    role = ""
-    rolename = message.content.split(" ")
-    member = discord.utils.get(cilent.get_all_members(), id=rolename[1])
-    for i in message.server.roles:
-        if i.name == rolename[2]:
-            role = i
-            break
-    await client.add_roles(member, role)
+
+
 
 
 
