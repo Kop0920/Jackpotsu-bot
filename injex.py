@@ -92,14 +92,6 @@ async def 투표(ctx):
     
 
 
-client = discord.Client()
-
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
 
 @client.event
 async def on_message(message): 
@@ -107,7 +99,11 @@ async def on_message(message):
     await message.channel.send("pong")
 
 if message.content.startswith("!역할부여"): 
-author = message.guild.get_member(int(message.content[6:24])) name = message.content[25:] role = discord.utils.get(message.guild.roles, name=name) await author.add_roles(role) 
+author =
+message.guild.get_member(int(message.content[6:24]))
+name = message.content[25:] role =
+discord.utils.get(message.guild.roles, name=name) await 
+author.add_roles(role) 
 
 
 
