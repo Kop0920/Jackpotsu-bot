@@ -92,12 +92,6 @@ async def 투표(ctx):
     
 
 
-
-@client.event
-async def on_message(message): 
-    if message.content.startswith("!ping"):
-    await message.channel.send("pong")
-
 if message.content.startswith("!역할부여"): 
 author =
 message.guild.get_member(int(message.content[6:24]))
