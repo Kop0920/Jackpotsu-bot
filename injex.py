@@ -92,8 +92,8 @@ async def 투표(ctx):
     
 
 
-if message.content.startswith("!역할부여"): 
-author = message.guild.get_member(int(message.content[6:24]))
+if message.content.startswith("!역할부여"):
+    author = message.guild.get_member(int(message.content[6:24]))
 name = message.content[25:] 
 role = discord.utils.get(message.guild.roles, name=name) 
 await author.add_roles(role) 
