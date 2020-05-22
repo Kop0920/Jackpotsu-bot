@@ -91,7 +91,7 @@ async def 투표(ctx):
         await choose.add_reaction("👍")
     
 
-@bot.command()
+@client.command()
 async def 역할부여(message):
     author = message.guild.get_member(int(message.content[6:24]))
     name = message.content[25:] 
