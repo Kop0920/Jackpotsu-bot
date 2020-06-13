@@ -48,6 +48,7 @@ async def B(ctx):
     await ctx.send('서버 조인바람 @everyone')
     await asyncio.sleep(0.3)
 
+
 @bot.command()
 async def C(ctx):
     await ctx.send('LIVE ON 비밀번호 노출 조심해주세요 @everyone')
@@ -82,6 +83,7 @@ async def R(ctx):
     await ctx.send('@everyone 레이드 갈 준비해주세요')
     
 
+
 @bot.command()
 async def 투표(ctx):
     vote = ctx.message.content[3:].split("/")
@@ -90,6 +92,7 @@ async def 투표(ctx):
         choose = await ctx.send("```" + vote[i] + "```")
         await choose.add_reaction("👍")
     
+
 
 @bot.command()
 async def 역할부여(message):
