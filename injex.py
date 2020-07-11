@@ -82,6 +82,18 @@ async def R(ctx):
     await asyncio.sleep(0.3)
     await ctx.send('@everyone 레이드 갈 준비해주세요')
     
+    
+@bot.command()
+async def H(ctx):
+    await ctx.send('@현서')
+    await asyncio.sleep(0.3)
+    await ctx.send('@현서')
+    await asyncio.sleep(0.3)
+    await ctx.send('@현서')
+    await asyncio.sleep(0.3)
+    await ctx.send('@현서')
+    await asyncio.sleep(0.3)
+    await ctx.send('@현서')
 
 
 @bot.command()
